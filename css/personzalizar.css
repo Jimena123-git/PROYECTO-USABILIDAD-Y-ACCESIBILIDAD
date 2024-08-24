@@ -1,0 +1,552 @@
+body{
+  background-color: rgba(255,255,255,255)
+}
+
+.header {
+  max-width: 1200px;
+  margin: auto; 
+  padding: 10px; 
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.Logo {
+  max-width: 10rem; 
+  margin-right: 10px; 
+  margin-left: 0; 
+  margin-top: 20px; 
+}
+
+.links {
+  display: flex;
+  justify-content: center; 
+  flex-grow: 1; 
+  color: rgba(13, 13, 13, 1);
+  font-size: 18px; 
+  margin-top: 30px;
+  gap: 15px; /* espacio entre los enlaces */
+}
+
+.header .links a {
+  text-decoration: none; 
+  color: #000; 
+  padding: 10px; 
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header .links {
+      flex-direction: column; /* Cambia la dirección de los enlaces a vertical */
+      align-items: center; /* Centra los enlaces verticalmente */
+  }
+
+  .header .links a {
+      margin: 10px 0; /* Espaciado entre enlaces en vertical */
+  }
+}
+
+.links a:hover {
+  color: rgba(62,135,153,255); /* Color cuando el cursor está sobre el enlace */
+}
+
+/* Estilo específico para el enlace destacado */
+.header .links .highlight {
+  color:rgba(62,135,153,255); /* Cambia el color del enlace "CONTACTANOS" */
+}
+
+.anton-regular-small {
+  font-family: "Anton";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+/* navbar */
+.navbar, .navbar-nav, .links {
+  display: flex;
+  justify-content: center; 
+  flex-grow: 1;
+  font-family: 'Anton', sans-serif;
+  font-size: 18px; 
+  gap: 15px;
+  color: black; 
+  background-color: rgba(255, 255, 255, 1); 
+  margin-top: 10px; 
+  text-decoration: none; 
+  margin-top: 20px;
+}
+
+.navbar-nav a, .links a {
+  color: black; 
+  padding: 10px; 
+  text-decoration: none; 
+}
+
+/* Estilo específico para el enlace destacado */
+.highlight {
+  color: rgba(62, 135, 153, 1) !important; 
+}
+
+/* Estado hover para los enlaces */
+.navbar-nav a:hover, .links a:hover {
+  color: rgba(62, 135, 153, 1); 
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header {
+      background-color: #f6f6f6;
+      margin-bottom: 20px; /*espacio debajo del header */
+  }
+
+  .navbar, .navbar-nav {
+      background-color: #f6f6f6; /* Fondo para la navegación en pantallas pequeñas */
+  }
+
+  .navbar-nav {
+      flex-direction: column; /* Cambia la dirección de los enlaces a vertical */
+      align-items: center; /* Centra los enlaces verticalmente */
+      padding: 0; /* Quita el padding interno para evitar espacio extra */
+      margin: 0; /* Quita el margin extra para evitar desplazamiento innecesario */
+  }
+
+  .navbar-nav a {
+      color:black; /* color de los enlaces*/
+      padding: 15px 20px; /* Aumenta el padding para que los enlaces sean más fáciles de tocar */
+      text-align: center; /* Centra el texto dentro de los enlaces */
+  }
+}
+
+.anton-regular-small {
+  font-family: "Anton", sans-serif; 
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+/*Personaliza tu sangria cuadrado*/
+.personaliza-sangria {
+  width: 90%; 
+  max-width: 1400px; 
+  height: auto; 
+  background-color: #f6f6f6;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 0; 
+  box-shadow: none; 
+  margin-bottom: 40px;
+}
+
+.personaliza-sangria-header p {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 30px; 
+  font-weight: bold;
+  text-transform: uppercase; 
+  margin-bottom: 20px; 
+}
+
+.personaliza-sangria p {
+  font-family: 'Poppins', sans-serif;
+  color: #333333; 
+  font-size: 22px;
+  margin: 0; 
+}
+
+/*Section del fondo */
+section {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px; /* Espaciado alrededor de la sección */
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra alrededor de la seccion */
+}
+
+/*Paso 1*/
+/* Titulo principal */
+h2.tittle {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Parrafos*/
+section p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo tarjetas de vino */
+.tarjetas-vinos .card {
+  background-color: rgba(241,243,244,255);
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.card-img-top {
+  height: 450px; 
+  object-fit: cover; 
+  width: 100%; 
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px; 
+}
+
+.selected {
+  border: 2px solid #007bff;
+}
+
+/* cursor */
+.vino-card {
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 1.5rem; 
+  color: #333; 
+  margin-bottom: 10px; 
+  text-align: center;
+  font-family: 'Anton';
+}
+
+.card-text {
+  font-size: 1rem; 
+  color: #666; 
+  margin-bottom: 15px; 
+}
+
+/* Paso 2: Sección de frutas */
+section p {
+  font-size: 1.2rem; 
+  color: #333; 
+  margin-bottom: 20px; 
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+  
+.row {
+  margin-top: 20px; /* Espacio encima de la fila de tarjetas */
+}
+  
+.tarjetas-frutas .card {
+  border: none; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  overflow: hidden; /* Asegura que el contenido no sobresalga */
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+  
+.tarjetas-frutas .card-img-top {
+  height: 200px; 
+}
+  
+.tarjetas-frutas .card-body {
+  background-color: #fff; 
+}
+  
+/* etiqueta del checkbox */
+.card-body .form-check-label {
+  font-size: 1rem; 
+  color: black; 
+  cursor: pointer; 
+  font-weight: bold;
+}
+  
+.card:hover {
+  transform: scale(1.03); /* Efecto de escala al pasar el cursor sobre la tarjeta */
+}
+  
+.card-body:hover {
+  background-color: rgba(241,243,244,255) /* cambie el color del fondo cuando pasas el cursor*/
+}
+  
+.card-body {
+  cursor: pointer;
+}
+
+/* Paso 3: Sección de edulcorantes */
+section p {
+  font-size: 1.2rem; 
+  color: #333; 
+  margin-bottom: 20px; 
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+  
+/* ancho y espaciado de los controles de formulario */
+.form-check {
+  align-items: center; /* Alinea verticalmente */
+  justify-content: center; /* Alinea horizontalmente */
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+  
+/* estilo para las etiquetas del formulario */
+  .form-check-label {
+  font-size: 1rem; 
+  color: #333; 
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer; 
+}
+  
+.form-check-label:hover {
+  color: #007bff;
+}
+
+/* Paso 4 y 5 */
+/* estilo de los controles de formulario */
+.form-check {
+  align-items: center; 
+  margin-bottom: 15px; 
+  padding: 10px; 
+  border-radius: 5px; 
+  background-color: #f9f9f9; 
+  transition: background-color 0.3s ease; /* transicion suave para el cambio de color de fondo */
+}
+  
+.form-check:hover {
+  background-color: #eaeaea; /* Color de fondo al pasar el cursor */
+}
+  
+.form-check-input {
+  cursor: pointer; 
+}
+
+/* texto */
+.form-check-label {
+  font-size: 1rem; 
+  color: #333; 
+  cursor: pointer; 
+}
+  
+.form-check-input
+.form-check-label {
+  color: #007bff; 
+}
+  
+.form-check-input:checked ~ .form-check-label {
+  font-weight: bold; /* Texto en negrita cuando el radio button está seleccionado */
+  }
+  
+#alert {
+  display: none; /* para que este oculto */
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Paso 6 */
+#vista-previa {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.vista-previa-titulo {
+  text-align: center;
+  margin-bottom: 16px; 
+  font-size: 2.5rem; 
+  font-family: 'Anton', sans-serif;
+  font-weight: bold; 
+  color: #222; 
+}
+
+/* Boton modificar pedido */
+.btn-pagina {
+  text-align: center; 
+  display: flex;
+  justify-content: center; 
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.btn-pagina .btn {
+  border-radius: 0;
+  font-size: 1rem; 
+}
+
+/*Motivate a personalizar*/
+.cartel {
+  margin: 20px auto; 
+  padding: 20px; /* espacio */
+  background-color: rgba(223,234,235,255);
+  text-align: center; 
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.cartel h2 {
+  font-family: "Anton", sans-serif; 
+  font-size: 2.5rem;
+  color: #333; 
+  margin-bottom: 10px; 
+}
+
+.cartel p {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.5rem; 
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+/*CARDS PORQUE PERSONALIZAR TU SANGRIA CON ALCMOIX*/
+.card-personalizar {
+  width: 20rem; 
+  height: 10rem;
+  background-color: #f1f3f4;
+  padding: 1.5rem; 
+  transition: transform 0.2s ease-in-out; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap; /*se me rompe sino */
+  margin-bottom: 2rem;
+}
+
+.card-title {
+    font-weight: 100;
+    color: rgba(41,41,41,255); 
+    margin-bottom: 1rem; 
+}
+
+.card-text{
+text-align: center;
+}
+
+/*Testimonios*/
+.nuestros-testimonios {
+  display: flex;
+  justify-content: center;
+  gap: 9rem; /* espacio entre los testimonios */
+  flex-wrap: wrap; /* Permite que los testimonios se reorganicen en varias filas si es necesario */
+}
+
+.testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20rem; 
+    margin: 0;
+    text-align: center;
+}
+
+.testimonios img {
+    width: 27rem; 
+    height: 20rem; 
+    margin-bottom: 20px; 
+}
+
+.testimonios h3 {
+    font-family: "Anton", sans-serif; 
+    font-size: 1.6rem; 
+    color: #333; 
+    margin-top: 10px; 
+}
+
+.testimonios p {
+  font-size: 1.1rem; 
+  color: #555; 
+  line-height: 1.6; 
+  margin-bottom: 20px;
+}
+
+.empieza-ahora p {
+  font-size: 1.125rem;
+  color: #333;
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn-pagina {
+  text-align: center;
+  justify-content: center; 
+  margin-top: 2rem;
+}
+
+.btn-pagina .btn {
+  border-radius: 0; 
+  font-size: 1rem;
+  padding: 0.75rem 1rem; 
+}
+
+footer {
+  background-color: black; 
+  padding: 20px; 
+  text-align: center; 
+  color: white;
+}
+
+.logo-footer {
+  max-width: 12rem; 
+  padding: 25px 0; 
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px; 
+}
+
+.footer-content h1 {
+  font-size: 20px;
+  padding: 20px 0;
+  margin: 0; 
+}
+
+.redes-icons {
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+  margin-bottom: 20px; 
+}
+
+.redes-icons img {
+  width: 30px; 
+  height: 30px; 
+}
+
+.redes-icons hr {
+  border: 0;
+  color: rgba(54,54,54,255);
+  border-top: 3px solid white; 
+  width: 35px;
+  margin: 0 1rem; 
+  margin-top: 1rem;
+}
+
+.medios-pagos {
+  padding: 100px;
+}
+
+.medios-pagos img {
+  max-width: 500px; 
+  height: auto;
+}

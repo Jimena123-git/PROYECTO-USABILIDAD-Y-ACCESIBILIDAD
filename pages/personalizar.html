@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar</title>
+    <link rel="stylesheet" href="/css/personzalizar.css">
+    <script type="module" defer src="/js/personalizar.js"></script>
+    <link rel="icon" href="/images/s.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap">
+   
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg">
+        <img class="Logo" id="logo" src="/images/alcomix logo letra en negro png.webp" alt="Logo de Alcomix" aria-label="Logo de Alcomix">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index/home.html" aria-label="Ir a la página de inicio">HOME</a>
+            <a class="nav-link highlight" href="../pages/personalizar.html" aria-label="Personaliza tu sangría">PERSONALIZA TU SANGRIA</a>
+            <a class="nav-link" href="../pages/quienessomos.html" aria-label="Quienes somos">QUIENES SOMOS</a>
+            <a class="nav-link" href="../pages/contacto.html" aria-label="Contáctanos">CONTACTO</a>
+            <a class="nav-link" href="../pages/mezclas.html" aria-label="Conoce nuestras mezclas">MEZCLAS</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="personaliza-sangria" class="personaliza-sangria">
+    <div class="container">
+      <div class="personaliza-sangria-header">
+        <p><strong>¡Bienvenido a la experiencia de personalización de Alcomix!</strong></p>
+      </div>
+      <p>Aquí puedes crear la sangría perfecta para cualquier ocasión, combinando una amplia variedad de ingredientes frescos y de alta calidad. Sigue los 7 pasos a continuación para diseñar tu mezcla única y sorprende a tus invitados con una bebida exquisita y personalizada.</p>
+    </div>
+  </section>
+  
+  <section id="seleccion-vino">
+    <h2 class="tittle">Paso 1: Seleccion del Vino Base</h2>
+    <p>Comienza eligiendo la base de tu sangría. Disponemos de tres opciones clásicas que servirán como el alma de tu bebida:</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="vino-card" data-vino="vino-tinto">
+                  <img src="/images/vinto tino png.webp" class="card-img-top" alt="Imagen de vino tinto">
+                    <div class="card-body">
+                        <h3 class="card-title">Vino Tinto</h3>
+                        <p class="card-text">Rico y robusto, ideal para una sangría tradicional con sabores profundos y complejos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="vino-card" data-vino="vino-blanco">
+                  <img src="/images/vino blanco png (3).webp" class="card-img-top" alt="Imagen de vino blanco">
+                    <div class="card-body">
+                        <h3 class="card-title">Vino Blanco</h3>
+                        <p class="card-text">Ligero y refrescante, perfecto para una sangría más ligera y veraniega.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="vino-card" data-vino="vino-rosado">
+                    <img src="/images/copa de vino rosada png.webp" class="card-img-top"  alt="Imagen de vino rosado">
+                    <div class="card-body">
+                        <h3 class="card-title">Vino Rosado</h3>
+                        <p class="card-text">Delicado y afrutado, combina lo mejor del tinto y el blanco para una mezcla deliciosa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+  <h2 class="tittle">Paso 2: Añade Frutas Frescas</h2>
+  <p>Las frutas son esenciales para una sangría vibrante y sabrosa. Selecciona hasta 3 frutas para darle ese toque único:</p>
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100 tarjetas-frutas">
+        <img src="/images/pixelcut-export (10).webp" class="card-img-top" alt="Imagen de naranjas">
+        <div class="card-body">
+          <h3 class="card-title">Naranjas</h3>
+          <p class="card-text">Añaden un toque cítrico y refrescante.</p>
+          <input class="from-checkbox" type="checkbox" value="Naranjas" id="naranjas">
+          <label class="form-check-label" for="naranjas">Seleccionar fruta</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 tarjetas-frutas">
+        <img src="/images/limon.webp" class="card-img-top" alt="Imagen de limones">
+        <div class="card-body">
+          <h3 class="card-title">Limones</h3>
+          <p class="card-text">Perfectos para un sabor ácido y fresco.</p>
+          <input class="from-checkbox" type="checkbox" name="frutas" value="Limones" id="limones">
+          <label class="form-check-label" for="limones">Seleccionar fruta</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 tarjetas-frutas">
+        <img src="/images/manzana.webp" class="card-img-top" alt="Imagen de manzana">
+        <div class="card-body">
+          <h3 class="card-title">Manzanas</h3>
+          <p class="card-text">Aportan dulzura y un ligero crujido.</p>
+          <input class="from-checkbox" type="checkbox" name="frutas" value="Manzanas" id="manzanas">
+          <label class="form-check-label" for="manzanas">Seleccionar fruta</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 tarjetas-frutas">
+        <img src="/images/fresas png.webp" class="card-img-top" alt="Imgane de fresas">
+        <div class="card-body">
+          <h3 class="card-title">Fresas</h3>
+          <p class="card-text">Dulces y jugosas, ideales para un toque veraniego.</p>
+          <input class="from-checkbox" type="checkbox" name="frutas" value="Fresas" id="fresas">
+          <label class="form-check-label" for="fresas">Seleccionar fruta</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 tarjetas-frutas">
+        <img src="/images/durazno png.webp" class="card-img-top" alt="Imagen de melocotones">
+        <div class="card-body">
+          <h3 class="card-title">Melocotones</h3>
+          <p class="card-text">Suaves y dulces, añaden un sabor delicado.</p>
+          <input class="from-checkbox" type="checkbox" name="frutas" value="Melocotones" id="melocotones">
+          <label class="form-check-label" for="melocotones">Seleccionar fruta</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 tarjetas-frutas">
+        <img src="/images/uvas png.webp" class="card-img-top" alt="Imagen de uvas">
+        <div class="card-body">
+          <h3 class="card-title">Uvas</h3>
+          <p class="card-text">Aportan dulzura y textura.</p>
+          <input class="from-checkbox" type="checkbox" name="frutas" value="Uvas" id="uvas">
+          <label class="form-check-label" for="uvas">Seleccionar fruta</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 tarjetas-frutas">
+        <img src="/images/frambuesas.webp" class="card-img-top" alt="Imagen de frambuesas">
+        <div class="card-body">
+          <h3 class="card-title">Frambuesas</h3>
+          <p class="card-text">Añaden un toque ácido y color vibrante.</p>
+          <input class="from-checkbox" type="checkbox" name="frutas" value="Frambuesas" id="frambuesas">
+          <label class="form-check-label" for="frambuesas">Seleccionar fruta</label>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 tarjetas-frutas">
+        <img src="/images/pinas.webp" class="card-img-top" alt="Imagen de piñas">
+        <div class="card-body">
+          <h3 class="card-title">Piñas</h3>
+          <p class="card-text">Exóticas y dulces, perfectas para una sangría tropical.</p>
+          <input class="from-checkbox" type="checkbox" name="frutas" value="Piñas" id="pinas">
+          <label class="form-check-label" for="pinas">Seleccionar fruta</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="tittle">Paso 3: Seleccion de Edulcorantes</h2>
+  <p>Personaliza el nivel de dulzura de tu sangría con nuestros edulcorantes naturales:</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="edulcorante" value="azucarBlanca" id="azucarBlanca">
+    <label class="form-check-label" for="azucarBlanca">Azúcar Blanca: El clásico edulcorante para una dulzura equilibrada.</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="edulcorante" value="azucarMoreno" id="azucarMoreno">
+    <label class="form-check-label" for="azucarMoreno">Azúcar Moreno: Añade un toque de caramelo y profundidad.</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="edulcorante" value="miel" id="miel">
+    <label class="form-check-label" for="miel">Miel: Natural y suave, perfecta para una dulzura ligera.</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="edulcorante" value="jarabeAgave" id="jarabeAgave">
+    <label class="form-check-label" for="jarabeAgave">Jarabe de Agave: Dulce y saludable, ideal para una opción más natural.</label>
+  </div>
+</section>
+
+<section>
+  <h2 class="tittle">Paso 4: Añade Licores Adicionales</h2>
+  <p>Dale un toque extra de sabor y complejidad a tu sangría con un licor adicional:</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="licorAdicional" value="brandy" id="brandy">
+    <label class="form-check-label" for="brandy">Brandy: Añade riqueza y un toque de sofisticación.</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="licorAdicional" value="tripleSec" id="tripleSec">
+    <label class="form-check-label" for="tripleSec">Triple Sec: Aporta un sabor cítrico y dulce.</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="licorAdicional" value="vodka" id="vodka">
+    <label class="form-check-label" for="vodka">Vodka: Neutro y versátil, realza los sabores de las frutas.</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="licorAdicional" value="ron" id="ron">
+    <label class="form-check-label" for="ron">Ron: Perfecto para una sangría tropical con un toque caribeño.</label>
+  </div>
+</section>
+
+<section>
+  <h2 class="tittle">Paso 5: Especias y Hierbas</h2>
+  <p>Añade un toque final de especies y hierbas. Selecciona hasta 3 para una sangria realmente especial:</p>
+  <form id="especiesForm">
+    <div class="form-check">
+      <input class="form-check-input spice-checkbox" type="checkbox" name="spice" value="Canela" id="canela">
+      <label class="form-check-label" for="canela">Canela: Aporta calidez y un sabor especiado.</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input spice-checkbox" type="checkbox" name="spice" value="Clavo" id="clavo">
+      <label class="form-check-label" for="clavo">Clavo: Añade un toque picante y aromático.</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input spice-checkbox" type="checkbox" name="spice" value="Menta" id="menta">
+      <label class="form-check-label" for="menta">Menta: Refrescante y vibrante, perfecta para el verano.</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input spice-checkbox" type="checkbox" name="spice" value="Albahaca" id="albahaca">
+      <label class="form-check-label" for="albahaca">Albahaca: Un toque herbal que añade frescura.</label>
+    </div>
+    <div id="alert" style="display:none; color: red;">Solo puedes seleccionar hasta 3 especias</div>
+  </form>
+</section>
+
+<section id="vista-previa">
+  <h2 class="tittle">Paso 6: Vista Previa y Ajustes</h2>
+  <p>Puedes modificar las cantidades y proporciones según tus preferencias. Queremos asegurarnos de que tu sangría sea exactamente como la imaginas.</p>
+  <h3>Vista Previa</h3>
+  <ul id="lista-ingredientes">
+    <!-- aca se va a mostrar la lista de los ingredientes seleccionados -->
+  </ul>
+  <div class="btn-pagina">
+    <button type="button" id="revisarMezcla" class="btn btn-outline-dark">REVISAR MEZCLA</button>
+</div>
+</section>
+
+<section>
+  <h2 class="tittle">Paso 7: Programación de la Entrega</h2>
+  <div class="mb-3">
+    <label for="fechaEntrega" class="form-label">
+    <p>Por favor, selecciona la fecha en la que prefieres recibir tu sangría. Así podremos garantizar que llegue fresca y lista para disfrutar en el momento perfecto.</p>
+    </label>
+    <input type="date" class="form-control" id="fechaEntrega" name="fechaEntrega" aria-required="true">
+  </div>
+  <p>Elige entre entrega estándar o exprés, según la urgencia de tu evento:</p>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="opcionesEnvio" id="envioEstandar" value="estandar" aria-required="true">
+    <label class="form-check-label" for="envioEstandar">
+      Entrega Estándar: Recibe tu sangría en un plazo de 3-5 días hábiles.
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="opcionesEnvio" id="envioExpres" value="expres">
+    <label class="form-check-label" for="envioExpres">
+      Entrega Exprés: Recibe tu sangría en un plazo de 1-2 días hábiles.
+    </label>
+  </div>
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary" id="comprar-btn" type="button">REALIZAR PEDIDO</button>
+  </div>
+
+</section>
+
+<div class="cartel">
+  <h2>¡MOTIVATE A PERSONALIZAR!</h2>
+  <p>Transforma tu Bebida, añade tus sabores y toques especiales</p>
+</div>
+
+<h2 class="tittle">PORQUE PERSONALIZAR TU SANGRIA CON ALCMOIX</h2>
+<div class="card-container">
+  <div class="card-personalizar">
+    <div class="card-body">
+      <nav class="links anton-regular-small"></nav>
+      <h3 class="card-title text-uppercase"><strong>Experiencia Única:</strong></h3>
+      <p class="card-text">Disfruta de una sangría que refleje tus gustos y preferencias únicas</p>
+    </div>
+  </div>
+  <div class="card-personalizar">
+    <div class="card-body">
+      <h3 class="card-title text-uppercase"><strong>Ingredientes de Alta Calidad:</strong></h3>
+      <p class="card-text"> Solo utilizamos frutas frescas y licores de calidad premium</p>
+    </div>
+  </div>
+  <div class="card-personalizar">
+    <div class="card-body">
+      <h3 class="card-title text-uppercase"><strong>Programa la Entrega:</strong></h3>
+      <p class="card-text">Crea la mezcla perfecta para cualquier ocasión, desde una cena íntima hasta una gran fiesta</p>
+    </div>
+  </div>
+  <div class="card-personalizar">
+    <div class="card-body">
+      <h3 class="card-title text-uppercase"><strong>Comodidad:</strong></h3>
+      <p class="card-text">Recibe tu sangría personalizada directamente en tu puerta, sin complicaciones.</p>
+    </div>
+  </nav>
+  </div>
+</div>
+
+<div class="testimonio">
+  <h2 class="tittle">TESTIMONIOS DE CLIENTES</h2>
+  <div class="nuestros-testimonios">
+      <div class="testimonios">
+          <img src="/images/ana lopez png.webp" class="img-testimonios" alt="Ana Lopez" aria-label="Cliente satisfecho">
+          <h3>Ana Lopez</h3>
+          <p>Crear mi propia mezcla de sangría fue una experiencia divertida y gratificante. 
+          <br> ¡Mis amigos quedaron impresionados!</p>
+      </div>
+      <div class="testimonios">
+          <img src="/images/roberto garcia.webp" class="img-testimonios" alt="Roberto Garcia" aria-label="Cliente satisfecho">
+          <h3>Roberto Garcia</h3>
+          <p>La calidad de los ingredientes es insuperable. La sangría personalizada de Alcomix fue el centro de atención en nuestra fiesta.</p>
+      </div>
+      <div class="testimonios">
+          <img src="/images/pixelcut-export (22).jpeg" class="img-testimonios" alt="Laura Martinez" aria-label="Cliente satisfecho">
+          <h3>Laura Martinez</h3>
+          <p>Me encantó la facilidad de uso del sitio web y la posibilidad de ajustar cada detalle de mi mezcla. ¡Definitivamente lo volveré a hacer!</p>
+      </div>
+    </div>
+    <div class="empieza-ahora">
+      <div class="btn-pagina">
+        <button onclick="window.location='../pages/personalizar.html'" class="btn btn-dark">¡EMPIEZA AHORA!</button>
+      </div>
+      <div class="empieza-ahora">
+        <p>Haz de tu próxima celebración algo inolvidable con una sangría personalizada de Alcomix. 
+          <br>¡Empieza ahora y crea una bebida que todos recordarán!</p>
+      </div>
+    </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <img class="logo-footer" src="/images/alcomix.logo.PNG" alt="Logo blanco de Alcomix">
+    <div class="footer-content">
+                <h1>¡Síguenos en nuestras redes sociales para enterarte de las últimas novedades y promociones!</h1>
+                
+                <div class="redes-icons">
+                    <a href="https://facebook.com" aria-label="Facebook">
+                        <img src="/images/facebook.png" alt="Icono de Facebook">
+                    </a>
+                    <hr class="linea">
+                    <a href="https://instagram.com" aria-label="Instagram">
+                        <img src="/images/instagram.png" alt="Icono de Instagram">
+                    </a>
+                    <hr class="linea">
+                    <a href="https://twitter.com" aria-label="Twitter">
+                        <img src="/images/twitter.png" alt="Icono de Twitter">
+                    </a>
+                </div>
+                
+                <div class="medios-pagos">
+                    <img src="/images/medios de pagos.png" alt="Medios de pagos">
+                </div>
+                <p>&copy; 2024 Alcomix. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
